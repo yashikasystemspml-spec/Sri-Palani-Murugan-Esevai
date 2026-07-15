@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ஸ்ரீ பழனிமுருகன் - E-Sevai Maiyam</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            /* Corporate Base Colors with Pink & Blue Infusion */
+            --primary-blue: #0f4c81;
+            --light-blue: #1d70b8;
+            --accent-pink: #fff0f5;
+            --vibrant-pink: #e1306c;
+            --text-dark: #1a202c;
+            --bg-light: #f7fafc;
+            --whatsapp-green: #25D366;
+            --csc-blue: #0b66b3;
+            --csc-orange: #f37023;
+            --csc-green: #009640;
+            --tnega-red: #ff0000;
+            --tnega-green: #008000;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* --- TOP BAR & NAVBAR --- */
+        .top-header {
+            background: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 5%;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .header-datetime {
+            color: var(--primary-blue);
+            letter-spacing: 0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 24px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-dark);
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover, .nav-links .active {
+            color: var(--vibrant-pink);
+            border-bottom: 2px solid var(--vibrant-pink);
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-left: 8px;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 0.85rem;
+            transition: transform 0.2s;
+        }
+        .social-icons a:hover {
+            transform: scale(1.1);
+        }
+        .social-fb { background: #3b5998; }
+        .social-wa { background: var(--whatsapp-green); }
+        .social-yt { background: #ff0000; }
+        .social-insta { background: var(--vibrant-pink); }
+
+        /* --- HERO SECTION 3-COLUMN CONTAINER --- */
+        .hero-container {
+            display: grid;
+            grid-template-columns: 30% 40% 30%;
+            background: #ffffff;
+            min-height: 425px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+
+        /* Side Panels Shared Styling */
+        .side-panel {
+            background: #fdfdfd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .csc-left-panel {
+            border-right: 1px solid #edf2f7;
+        }
+
+        .esevai-right-panel {
+            border-left: 1px solid #edf2f7;
+        }
+
+        .logo-link-card {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 30px 20px;
+            width: 100%;
+            max-width: 310px;
+            transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+            box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+        }
+
+        .logo-link-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .csc-link-card:hover {
+            box-shadow: 0 12px 24px rgba(11, 102, 179, 0.1);
+            border-color: var(--csc-blue);
+        }
+
+        .esevai-link-card:hover {
+            box-shadow: 0 12px 24px rgba(0, 128, 0, 0.1);
+            border-color: var(--tnega-green);
+        }
+
+        /* Left Side: CSC Custom CSS Logo Styling */
+        .csc-logo-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            width: 100%;
+        }
+
+        .csc-emblem {
+            position: relative;
+            width: 65px;
+            height: 95px;
+            flex-shrink: 0;
+        }
+
+        .emblem-ring {
+            position: absolute;
+            border-style: solid;
+            border-radius: 50%;
+            transform: rotate(-45deg);
+        }
+
+        .ring-orange {
+            width: 60px;
+            height: 85px;
+            border-color: var(--csc-orange) transparent transparent var(--csc-orange);
+            border-width: 8px 0px 0px 8px;
+            top: 0;
+            left: 5px;
+        }
+
+        .ring-green {
+            width: 46px;
+            height: 70px;
+            border-color: var(--csc-green) transparent transparent var(--csc-green);
+            border-width: 7px 0px 0px 7px;
+            top: 12px;
+            left: 12px;
+        }
+
+        .ring-blue {
+            width: 32px;
+            height: 50px;
+            border-color: var(--csc-blue) transparent transparent var(--csc-blue);
+            border-width: 6px 0px 0px 6px;
+            top: 25px;
+            left: 18px;
+        }
+
+        .wifi-dot {
+            position: absolute;
+            top: 15px;
+            left: 16px;
+            color: var(--csc-blue);
+            font-size: 0.7rem;
+        }
+
+        .csc-text-side {
+            text-align: left;
+        }
+
+        .csc-main-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 900;
+            line-height: 0.85;
+            color: var(--csc-blue);
+            letter-spacing: -1.5px;
+        }
+
+        .csc-sub-text {
+            font-size: 0.6rem;
+            font-weight: 700;
+            color: var(--csc-blue);
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            letter-spacing: 0.2px;
+        }
+
+        .di-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 800;
+            color: #4a5568;
+            line-height: 1;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 4px;
+            letter-spacing: -0.5px;
+        }
+
+        .di-slogan {
+            font-size: 0.6rem;
+            font-weight: 600;
+            color: #718096;
+            letter-spacing: 0.5px;
+        }
+
+        /* Right Side: TNeGA Layout */
+        .esevai-logo-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .esevai-text-side {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .tnega-main-text {
+            font-family: 'Inter', sans-serif;
+            font-size: 2.4rem;
+            font-weight: 900;
+            line-height: 1;
+            color: #124076;
+            letter-spacing: -0.5px;
+            margin-bottom: 5px;
+        }
+
+        .slogan-green {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--tnega-green);
+            line-height: 1.2;
+        }
+
+        .slogan-red {
+            font-size: 1.4rem;
+            font-weight: 800;
+            color: var(--tnega-red);
+            line-height: 1.2;
+        }
+
+        /* --- CENTER PANEL DESIGN --- */
+        .branding-panel {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 35px 25px;
+            text-align: center;
+            background: linear-gradient(180deg, #ffffff 0%, var(--accent-pink) 100%);
+        }
+
+        .brand-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            font-weight: 900;
+            line-height: 1.15;
+            background: linear-gradient(135deg, #0f4c81 0%, #706fd3 50%, #e1306c 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 12px;
+            letter-spacing: -0.5px;
+        }
+
+        .badge-esevai {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(90deg, #e1306c, #ff4757);
+            color: #ffffff;
+            padding: 6px 22px;
+            border-radius: 5px;
+            font-weight: 900;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            margin-bottom: 14px;
+            box-shadow: 0 4px 12px rgba(225, 48, 108, 0.25);
+        }
+
+        .tamil-slogan {
+            font-family: 'Playfair Display', serif;
+            font-style: italic;
+            font-size: 1.25rem;
+            color: #0c2461;
+            font-weight: 800;
+            margin-bottom: 18px;
+        }
+
+        .location-info {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 800;
+            color: var(--primary-blue);
+            margin-bottom: 24px;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+        .location-info i { 
+            color: var(--vibrant-pink); 
+            margin-right: 6px;
+            font-size: 1.05rem;
+        }
+
+        /* Contact Row Styling */
+        .contact-row {
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 1.1rem;
+            font-weight: 800;
+            border-top: 1px dashed rgba(15, 76, 129, 0.2);
+            padding-top: 18px;
+            width: 85%;
+            justify-content: center;
+        }
+        
+        .contact-name { 
+            color: #2c3a47; 
+            position: relative;
+        }
+        .contact-name::after {
+            content: '•';
+            position: absolute;
+            right: -10px;
+            color: #cbd5e0;
+        }
+        
+        .contact-phone { 
+            color: var(--primary-blue); 
+            display: flex; 
+            align-items: center; 
+            gap: 6px;
+        }
+        .contact-phone i { 
+            color: var(--whatsapp-green); 
+            font-size: 1.25rem;
+        }
+
+        /* --- MIDDLE SEARCH BAR SECTION --- */
+        .search-container {
+            max-width: 600px;
+            margin: 0 auto 35px auto;
+            position: relative;
+        }
+
+        .search-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-input {
+            width: 100%;
+            padding: 15px 20px 15px 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            background: #ffffff;
+            border: 2px solid #e2e8f0;
+            border-radius: 50px;
+            outline: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+        }
+
+        .search-input:focus {
+            border-color: var(--light-blue);
+            box-shadow: 0 8px 25px rgba(29, 112, 184, 0.15);
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 20px;
+            color: #a0aec0;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        .search-input:focus + .search-icon {
+            color: var(--light-blue);
+        }
+
+        /* --- MAIN SERVICES GRID --- */
+        .services-section {
+            background: #fff;
+            margin: 40px 5%;
+            padding: 40px 30px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.02);
+        }
+
+        .section-heading {
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--text-dark);
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+        }
+        
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            width: 40px;
+            height: 3px;
+            background: var(--light-blue);
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+            gap: 16px;
+        }
+
+        .grid-item {
+            background: #ffffff;
+            border: 1px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 22px 12px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.25s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            cursor: pointer;
+        }
+
+        .grid-item:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+            border-color: var(--light-blue);
+        }
+
+        .grid-item i { font-size: 1.8rem; }
+        .grid-item p { font-size: 0.8rem; font-weight: 700; color: #334155; line-height: 1.3; }
+
+        /* Service Specific Icon Colors */
+        .c-aadhaar { color: #e056fd; }
+        .c-pancard { color: #0984e3; }
+        .c-voter { color: #00b894; }
+        .c-driving { color: #ff7675; }
+        .c-passport { color: #2c3e50; }
+        .c-pattarural { color: #2ecc71; }
+        .c-pattaurban { color: #20bf6b; }
+        .c-ration { color: #e67e22; }
+        .c-tneb { color: #f1c40f; }
+        .c-tnebcode { color: #ffa500; }
+        .c-fmb { color: #3498db; }
+        .c-birth { color: #ed4c67; }
+        .c-umang { color: #ff6b6b; }
+        .c-scholar { color: #2980b9; }
+        .c-tnpsc { color: #9b59b6; }
+        .c-tnreginet { color: #800000; }
+        .c-vptax { color: #ff6b6b; }
+        .c-tnurban { color: #00a8ff; } 
+        .c-tamilnilam { color: #20bf6b; }
+        .c-employ { color: #d35400; }
+        .c-itax { color: #27ae60; }
+        .c-msme { color: #16a085; }
+        .c-gst { color: #706fd3; }
+        .c-epfo { color: #ff9f43; }
+        .c-gemini { color: #4285f4; }
+        .c-chatgpt { color: #10a37f; }
+        
+        /* Added Icons Colors */
+        .c-tnpolice { color: #1e3799; }
+        .c-rte { color: #f8a5c2; }
+        .c-ginput { color: #0abde3; }
+        .c-gtranslate { color: #54a0ff; }
+        .c-cmhelpline { color: #eb4d4b; }
+        .c-dipr { color: #10ac84; }
+        .c-tngov { color: #ee5253; }
+        .c-jathagam { color: #ff9f43; }
+        .c-pmkisan { color: #1dd1a1; }
+        .c-tngis { color: #00d2d3; }
+        .c-pi7 { color: #ff6b6b; }
+        .c-zon11 { color: #ff9f43; }
+        .c-sejda { color: #10ac84; }
+        .c-paycsc { color: #2e86de; }
+        .c-landcalc { color: #20bf6b; }
+        .c-tncertold { color: #ff5252; }
+        .c-tncertstatus { color: #38ef7d; }
+        .c-differentlyabled { color: #9c27b0; }
+        .c-postoffice { color: #de2129; }
+        .c-panresize { color: #00a8ff; }
+        .c-agecalc { color: #ff4757; }
+        
+        /* Block Colors */
+        .c-pstm { color: #6c5ce7; }
+        .c-vahan { color: #fd79a8; }
+        .c-tnuwwb { color: #e67e22; }
+        .c-irctc { color: #0984e3; }
+        .c-tnstc { color: #00b894; }
+        .c-echallan { color: #d63031; }
+        
+        /* Central Job Portals Colors */
+        .c-ssc { color: #e67e22; }
+        .c-rrb { color: #0056b3; }
+        
+        /* Karuvoolam Color */
+        .c-karuvoolam { color: #10ac84; }
+        
+        /* New Blocks Colors */
+        .c-epfobalance { color: #20bf6b; }
+        .c-esevailist { color: #00a8ff; }
+        .c-salem { color: #800020; }
+        .c-ugcnet { color: #6f11d1; }
+
+        /* --- POPUP MODAL FOR AGE CALCULATOR --- */
+        .modal-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            backdrop-filter: blur(4px);
+        }
+
+        .modal-box {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 16px;
+            width: 100%;
+            max-width: 420px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+            position: relative;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { transform: scale(0.9); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #edf2f7;
+            padding-bottom: 10px;
+        }
+
+        .modal-header h3 {
+            color: var(--primary-blue);
+            font-size: 1.3rem;
+            font-weight: 800;
+        }
+
+        .close-modal {
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #a0aec0;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .close-modal:hover {
+            color: var(--tnega-red);
+        }
+
+        .modal-body label {
+            display: block;
+            font-size: 0.9rem;
+            font-weight: 700;
+            color: #4a5568;
+            margin-bottom: 8px;
+        }
+
+        .modal-body input[type="date"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e2e8f0;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            outline: none;
+            margin-bottom: 15px;
+            font-family: inherit;
+        }
+
+        .modal-body input[type="date"]:focus {
+            border-color: var(--light-blue);
+        }
+
+        .calc-btn {
+            width: 100%;
+            background: linear-gradient(90deg, var(--primary-blue), var(--light-blue));
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-transform: uppercase;
+        }
+
+        .calc-btn:hover {
+            background: linear-gradient(90deg, var(--light-blue), var(--primary-blue));
+        }
+
+        .result-box {
+            margin-top: 20px;
+            padding: 15px;
+            background: var(--accent-pink);
+            border-left: 4px solid var(--vibrant-pink);
+            border-radius: 4px;
+            display: none;
+        }
+
+        .result-box p {
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #2d3748;
+            margin-bottom: 6px;
+        }
+
+        .result-box span {
+            color: var(--vibrant-pink);
+            font-size: 1.1rem;
+            display: block;
+            margin-top: 4px;
+        }
+
+        /* --- FOOTER HIGHLIGHTS BAR --- */
+        .footer-highlights {
+            background: #0f1d2a;
+            color: #fff;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            padding: 30px 5%;
+            gap: 25px;
+            border-top: 3px solid var(--primary-blue);
+        }
+
+        .highlight-item { display: flex; align-items: center; gap: 15px; }
+        .highlight-item i { font-size: 1.4rem; }
+        .hl-orange { color: #ffaa42; }
+        .hl-green { color: #2ecc71; }
+        .hl-blue { color: #3498db; }
+        .hl-pink { color: #ff7675; }
+        .hl-text h4 { font-size: 0.8rem; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 2px;}
+        .hl-text p { font-size: 0.75rem; color: #94a3b8; }
+
+        /* Floating Sticky Elements */
+        .btn-top {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background: var(--primary-blue);
+            color: #fff;
+            width: 45px;
+            height: 45px;
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.6rem;
+            font-weight: 700;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+        .btn-top:hover { background: var(--light-blue); }
+        .btn-top i { font-size: 0.8rem; margin-bottom: 2px; }
+
+        .btn-wa-float {
+            position: fixed;
+            bottom: 25px;
+            right: 25px;
+            background: var(--whatsapp-green);
+            color: #fff;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.7rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+            text-decoration: none;
+            z-index: 999;
+            transition: transform 0.3s;
+        }
+        .btn-wa-float:hover { transform: scale(1.05); }
+
+        /* Responsive Breakpoints */
+        @media (max-width: 1100px) {
+            .hero-container {
+                grid-template-columns: 1fr;
+            }
+            .side-panel {
+                border: none;
+                border-bottom: 1px solid #edf2f7;
+                padding: 20px;
+            }
+            .contact-row {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="top-header">
+        <div class="header-datetime">
+            <i class="fa-regular fa-calendar-days"></i> 09/07/2026 | <i class="fa-regular fa-clock"></i> 10:17:11 PM
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Testimonials</a></li>
+                <li><a href="#">Enquiry</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/login/" class="social-fb" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="https://web.whatsapp.com/" class="social-wa" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.youtube.com/" class="social-yt" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://www.instagram.com/" class="social-insta" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </header>
+
+    <main class="hero-container">
+        
+        <section class="side-panel csc-left-panel">
+            <a href="https://connect.csc.gov.in/account/authorize?response_type=code&client_id=0f8ca686-5a31-46b8-bb51-d9834ba9fa9d&redirect_uri=https%3A%2F%2Fdigitalseva.csc.gov.in%2Fauth%2Fcallback%2F&state=35399" class="logo-link-card csc-link-card" target="_blank">
+                <div class="csc-logo-wrapper">
+                    <div class="csc-emblem">
+                        <div class="emblem-ring ring-orange"></div>
+                        <div class="emblem-ring ring-green"></div>
+                        <div class="emblem-ring ring-blue"></div>
+                        <i class="fa-solid fa-wifi wifi-dot"></i>
+                    </div>
+                    <div class="csc-text-side">
+                        <h2 class="csc-main-text">CSC</h2>
+                        <p class="csc-sub-text">Common Services Center</p>
+                        <h4 class="di-text">Digital India</h4>
+                        <p class="di-slogan">Power To Empower</p>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <section class="branding-panel">
+            <h1 class="brand-title">ஸ்ரீ பழனிமுருகன்</h1>
+            <div class="badge-esevai">✦ E-SEVAI MAIYAM ✦</div>
+            <p class="tamil-slogan">உங்கள் சேவை எங்கள் பொறுப்பு</p>
+            <div class="location-info">
+                <i class="fa-solid fa-location-dot"></i> சதாசிவபுரம்
+            </div>
+
+            <div class="contact-row">
+                <span class="contact-name">ரமேஷ்</span>
+                <span class="contact-phone"><i class="fa-brands fa-whatsapp"></i> 8675636411</span>
+            </div>
+        </section>
+
+        <section class="side-panel esevai-right-panel">
+            <a href="https://www.tnesevai.tn.gov.in/Default.aspx?Msg=wG20D4uMCP7O+syex8bxQ9X55F8lrKIccjfTCxWZay7w7ekOxiodd7EZkAOUlHWnUgMmC9YHk5xKQyKdfYSfuw==" class="logo-link-card esevai-link-card" target="_blank">
+                <div class="esevai-logo-wrapper">
+                    <div class="esevai-text-side">
+                        <h2 class="tnega-main-text">TNeGA</h2>
+                        <span class="slogan-green">இனிய சேவை</span>
+                        <span class="slogan-red">இணைய சேவை</span>
+                    </div>
+                </div>
+            </a>
+        </section>
+    </main>
+
+    <section class="services-section">
+        <h2 class="section-heading">Our Services</h2>
+        
+        <div class="search-container">
+            <div class="search-wrapper">
+                <input type="text" id="serviceSearch" class="search-input" placeholder="Search services here... (e.g., Aadhaar, Patta, Rural, Urban, Age)">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div>
+        </div>
+
+        <div class="grid-container" id="servicesGrid">
+            
+            <a href="https://myaadhaar.uidai.gov.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-fingerprint c-aadhaar"></i>
+                <p>Aadhaar Services</p>
+            </a>
+            
+            <a href="https://tinpan.proteantech.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-address-card c-pancard"></i>
+                <p>NSDL Pan</p>
+            </a>
+            
+            <a href="https://voters.eci.gov.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-id-card c-voter"></i>
+                <p>Voter ID Services</p>
+            </a>
+            
+            <a href="https://sarathi.parivahan.gov.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-id-badge c-driving"></i>
+                <p>Driving Licence Services</p>
+            </a>
+            
+            <a href="https://www.passportindia.gov.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-passport c-passport"></i>
+                <p>Passport Services</p>
+            </a>
+            
+            <a href="https://edistricts.tn.gov.in:8443/cas/login?service=https%3A%2F%2Ftamilnilam.tn.gov.in%2FCSC%2FOWTServlet1" class="grid-item" target="_blank">
+                <i class="fa-solid fa-map-location-dot c-pattarural"></i>
+                <p>Patta Transfer (Rural)</p>
+            </a>
+
+            <a href="https://edistricts.tn.gov.in:8443/cas/login?service=https%3A%2F%2Furbantamilnilam.tn.gov.in%2FUrban_CSC%2FOWTServlet1" class="grid-item" target="_blank">
+                <i class="fa-solid fa-map-location-dot c-pattaurban"></i>
+                <p>Patta Transfer (Urban)</p>
+            </a>
+            
+            <a href="https://www.tnpds.gov.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-credit-card c-ration"></i>
+                <p>Ration Card Services</p>
+            </a>
+            
+            <a href="https://www.tnpdcl.org/en/tnpdcl/online-services/onlinesernew/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-plug-circle-bolt c-tneb"></i>
+                <p>TNEB Services</p>
+            </a>
+
+            <a href="https://geod.in/tneb-distribution-code-list/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-list-ol c-tnebcode"></i>
+                <p>TNEB Distribution Code List</p>
+            </a>
+            
+            <a href="#" class="grid-item">
+                <i class="fa-solid fa-map c-fmb"></i>
+                <p>Chitta & FMB Services</p>
+            </a>
+            
+            <a href="https://www.crstn.org/birth_death_tn/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-cake-candles c-birth"></i>
+                <p>Birth & Death Certificate</p>
+            </a>
+            
+            <a href="https://web.umang.gov.in/web_new/login" class="grid-item" target="_blank">
+                <i class="fa-solid fa-person-cane c-umang"></i>
+                <p>UMANG Pension Services</p>
+            </a>
+            
+            <a href="https://pmvidyalaxmi.co.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-graduation-cap c-scholar"></i>
+                <p>Scholarship Applications</p>
+            </a>
+
+            <a href="https://tnpsc.gov.in/home.aspx" class="grid-item" target="_blank">
+                <i class="fa-solid fa-graduation-cap c-tnpsc"></i>
+                <p>TNPSC Services</p>
+            </a>
+
+            <a href="https://tnreginet.gov.in/portal/webHP?requestType=ApplicationRH&actionVal=homePage&screenId=114&UserLocaleID=en&_csrf=68756822-6300-4fae-9eae-45dfed852591" class="grid-item" target="_blank">
+                <i class="fa-solid fa-scroll c-tnreginet"></i>
+                <p>TNREGINET (EC/Reg)</p>
+            </a>
+
+            <a href="https://vptax.tnrd.tn.gov.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-building-columns c-vptax"></i>
+                <p>Property & House Tax</p>
+            </a>
+
+            <a href="https://tnurbanepay.tn.gov.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-city c-tnurban"></i>
+                <p>TN Urban E-Pay</p>
+            </a>
+
+            <a href="https://tamilnilam.tn.gov.in/citizen/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-seedling c-tamilnilam"></i>
+                <p>Tamil Nilam (Citizen)</p>
+            </a>
+            
+            <a href="https://employmentexchange.tn.gov.in/Empower/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-briefcase c-employ"></i>
+                <p>Employment Registration</p>
+            </a>
+
+            <a href="https://www.incometax.gov.in/iec/foportal/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-calculator c-itax"></i>
+                <p>Income Tax Services</p>
+            </a>
+            
+            <a href="https://udyamregistration.gov.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-industry c-msme"></i>
+                <p>MSME / UDYAM Registration</p>
+            </a>
+            
+            <a href="https://www.gst.gov.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-percent c-gst"></i>
+                <p>GST Registration Assistance</p>
+            </a>
+
+            <div class="grid-item" onclick="openEpfoWebsites()">
+                <i class="fa-solid fa-piggy-bank c-epfo"></i>
+                <p>EPFO Services</p>
+            </div>
+
+            <a href="https://gemini.google.com/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-wand-magic-sparkles c-gemini"></i>
+                <p>Gemini AI</p>
+            </a>
+
+            <a href="https://chatgpt.com/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-robot c-chatgpt"></i>
+                <p>ChatGPT AI</p>
+            </a>
+
+            <a href="https://www.police.tn.gov.in/citizenportal" class="grid-item" target="_blank">
+                <i class="fa-solid fa-shield-halved c-tnpolice"></i>
+                <p>TN Police Citizen Portal</p>
+            </a>
+
+            <a href="https://rteadmission.tnschools.gov.in/home" class="grid-item" target="_blank">
+                <i class="fa-solid fa-school c-rte"></i>
+                <p>RTE Admission</p>
+            </a>
+
+            <a href="https://www.google.com/intl/en/inputtools/try/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-keyboard c-ginput"></i>
+                <p>Google Input Tools</p>
+            </a>
+
+            <a href="https://translate.google.co.in/?sl=en&tl=ta&op=translate" class="grid-item" target="_blank">
+                <i class="fa-solid fa-language c-gtranslate"></i>
+                <p>Google Translate</p>
+            </a>
+
+            <a href="https://cmhelpline.tnega.org/portal/ta/home" class="grid-item" target="_blank">
+                <i class="fa-solid fa-phone-volume c-cmhelpline"></i>
+                <p>CM Helpline Portal</p>
+            </a>
+
+            <a href="https://dipr.tn.gov.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-bullhorn c-dipr"></i>
+                <p>TN DIPR Portal</p>
+            </a>
+
+            <a href="https://www.tn.gov.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-goverment c-tngov"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:middle;"><path d="M12 2L2 7v2h20V7L12 2zm0 13c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm10 4H2v2h20v-2z"/></svg></i>
+                <p>TN Government Official</p>
+            </a>
+
+            <a href="https://srirangaminfo.com/Jathagam-tamil.php" class="grid-item" target="_blank">
+                <i class="fa-solid fa-om c-jathagam"></i>
+                <p>Jathagam Tamil</p>
+            </a>
+
+            <a href="https://pmkisan.gov.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-wheat-awn c-pmkisan"></i>
+                <p>PM Kisan Portal</p>
+            </a>
+
+            <a href="https://tngis.tn.gov.in/apps/gi_viewer/map-viewer/index.html" class="grid-item" target="_blank">
+                <i class="fa-solid fa-earth-americas c-tngis"></i>
+                <p>TNGIS Map Viewer</p>
+            </a>
+
+            <a href="https://pdf.pi7.org/compress-pdf-to-200kb" class="grid-item" target="_blank">
+                <i class="fa-solid fa-file-pdf c-pi7"></i>
+                <p>Compress PDF 200KB</p>
+            </a>
+
+            <a href="https://bigpdf.11zon.com/en/compress-pdf/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-file-file-zip c-zon11"><svg width="30" height="30" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;vertical-align:middle;"><path d="M20 6h-8l-2-2H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-3 9h-2v2h-2v-2-h-2v-2h2v-2h2v2h2v2z"/></svg></i>
+                <p>11zon Big PDF Compress</p>
+            </a>
+
+            <a href="https://www.sejda.com/pdf-editor" class="grid-item" target="_blank">
+                <i class="fa-solid fa-file-pen c-sejda"></i>
+                <p>Sejda PDF Editor</p>
+            </a>
+
+            <a href="https://agent.paycsc.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-wallet c-paycsc"></i>
+                <p>PayCSC Agent Portal</p>
+            </a>
+
+            <a href="#" class="grid-item">
+                <i class="fa-solid fa-calculator c-landcalc"></i>
+                <p>Land Calculator</p>
+            </a>
+
+            <a href="https://edistricts.tn.gov.in/revenue/verifyCertificate.html" class="grid-item" target="_blank">
+                <i class="fa-solid fa-file-arrow-down c-tncertold"></i>
+                <p>TN Old Certificate Download</p>
+            </a>
+
+            <a href="https://tnedistrict.tn.gov.in/tneda/VerifyCerti.xhtml" class="grid-item" target="_blank">
+                <i class="fa-solid fa-file-shield c-tncertstatus"></i>
+                <p>TN Certificate Status And Download</p>
+            </a>
+
+            <a href="https://www.tnesevai.tn.gov.in/edistrict/CheckStatus/PublicSearch/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-wheelchair c-differentlyabled"></i>
+                <p>Welfare of Differently Abled Persons Application Status</p>
+            </a>
+
+            <a href="https://www.indiapost.gov.in/gdsonlineengagement" class="grid-item" target="_blank">
+                <i class="fa-solid fa-envelopes-bulk c-postoffice"></i>
+                <p>Post Office GDS</p>
+            </a>
+
+            <a href="https://uti.mypancenter.com/uti-psa-cropping-tools" class="grid-item" target="_blank">
+                <i class="fa-solid fa-crop-simple c-panresize"></i>
+                <p>UTL PAN Photo Signature Resize</p>
+            </a>
+
+            <a href="https://www.tnesevai.tn.gov.in/ApplicationStatus.aspx" class="grid-item" target="_blank">
+                <i class="fa-solid fa-file-check c-pstm"></i>
+                <p>PSTM Status</p>
+            </a>
+
+            <a href="https://vahan.parivahan.gov.in/nrservices/faces/user/citizen/citizenlogin.xhtml" class="grid-item" target="_blank">
+                <i class="fa-solid fa-car c-vahan"></i>
+                <p>Vehicle Details</p>
+            </a>
+
+            <a href="https://tnuwwb.tn.gov.in/amendments/amendmentmobileforgot" class="grid-item" target="_blank">
+                <i class="fa-solid fa-helmet-safety c-tnuwwb"></i>
+                <p>TNUWWB Kattumanam Nalavariyam</p>
+            </a>
+
+            <a href="https://www.irctc.co.in/nget/train-search" class="grid-item" target="_blank">
+                <i class="fa-solid fa-train c-irctc"></i>
+                <p>IRCTC Train Ticket</p>
+            </a>
+
+            <a href="https://www.tnstc.in/OTRSOnline/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-bus c-tnstc"></i>
+                <p>TNSTC Bus Booking</p>
+            </a>
+
+            <a href="https://echallan.parivahan.gov.in/index/accused-challan" class="grid-item" target="_blank">
+                <i class="fa-solid fa-ticket c-echallan"></i>
+                <p>Vehicle E-Challan</p>
+            </a>
+
+            <a href="https://ssc.gov.in/home" class="grid-item" target="_blank">
+                <i class="fa-solid fa-building-shield c-ssc"></i>
+                <p>Staff Selection Commission SSC</p>
+            </a>
+
+            <a href="https://www.rrbchennai.gov.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-train-subway c-rrb"></i>
+                <p>RRB CHENNAI</p>
+            </a>
+
+            <a href="https://www.karuvoolam.tn.gov.in/ta/web/tnta/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-building-columns c-karuvoolam"></i>
+                <p>Karuvoolam Challan Pay</p>
+            </a>
+
+            <a href="https://passbook.epfindia.gov.in/MemberPassBook/login" class="grid-item" target="_blank">
+                <i class="fa-solid fa-money-check-dollar c-epfobalance"></i>
+                <p>EPFO Balance Status</p>
+            </a>
+
+            <a href="https://kmut.tn.gov.in/esevai-centers.html" class="grid-item" target="_blank">
+                <i class="fa-solid fa-map-location-dot c-esevailist"></i>
+                <p>List of E-Sevai Centers</p>
+            </a>
+
+            <a href="https://salem.nic.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-building-columns c-salem"></i>
+                <p>Salem District</p>
+            </a>
+
+            <a href="https://ugcnet.nta.nic.in/" class="grid-item" target="_blank">
+                <i class="fa-solid fa-user-graduate c-ugcnet"></i>
+                <p>UGC NET EXAM</p>
+            </a>
+
+            <a href="#" class="grid-item" onclick="openAgeCalculator(event)">
+                <i class="fa-solid fa-cake-candles c-agecalc"></i>
+                <p>Age Calculator</p>
+            </a>
+
+        </div>
+    </section>
+
+    <div class="modal-overlay" id="ageCalcModal">
+        <div class="modal-box">
+            <div class="modal-header">
+                <h3>Age Calculator</h3>
+                <button class="close-modal" onclick="closeAgeCalculator()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <label for="birthDate">Select Date of Birth:</label>
+                <input type="date" id="birthDate">
+                <button class="calc-btn" onclick="calculateAge()">Calculate Age</button>
+                
+                <div class="result-box" id="ageResult">
+                    <p>Calculated Age (As of Today):</p>
+                    <span id="finalAge"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer-highlights">
+        <div class="highlight-item">
+            <i class="fa-solid fa-star hl-orange"></i>
+            <div class="hl-text">
+                <h4>50+ SERVICES</h4>
+                <p>All Under One Roof</p>
+            </div>
+        </div>
+        <div class="highlight-item">
+            <i class="fa-solid fa-bolt hl-green"></i>
+            <div class="hl-text">
+                <h4>QUICK SERVICE</h4>
+                <p>Save Your Time</p>
+            </div>
+        </div>
+        <div class="highlight-item">
+            <i class="fa-solid fa-shield-halved hl-blue"></i>
+            <div class="hl-text">
+                <h4>SAFE & SECURE</h4>
+                <p>100% Trusted</p>
+            </div>
+        </div>
+        <div class="highlight-item">
+            <i class="fa-solid fa-headset hl-pink"></i>
+            <div class="hl-text">
+                <h4>EXPERT SUPPORT</h4>
+                <p>We are Here to Help</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" class="btn-top">
+        <i class="fa-solid fa-arrow-up"></i>
+        TOP
+    </a>
+
+    <a href="https://wa.me/8675636411" class="btn-wa-float" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        function openEpfoWebsites() {
+            window.open("https://unifiedportal-mem.epfindia.gov.in/memberinterface/", "_blank");
+            window.open("https://passbook.epfindia.gov.in/MemberPassBook/login", "_blank");
+            window.open("https://www.epfindia.gov.in/site_en/", "_blank");
+        }
+
+        // Live JavaScript Search Filter
+        function filterServices() {
+            let input = document.getElementById('serviceSearch').value.toLowerCase();
+            let grid = document.getElementById('servicesGrid');
+            let items = grid.getElementsByClassName('grid-item');
+
+            for (let i = 0; i < items.length; i++) {
+                let text = items[i].getElementsByTagName('p')[0].innerText.toLowerCase();
+                if (text.includes(input)) {
+                    items[i].style.display = "";
+                } else {
+                    items[i].style.display = "none";
+                }
+            }
+        }
+        
+        // Connect event listener for search dynamically
+        document.getElementById('serviceSearch').addEventListener('keyup', filterServices);
+
+        /* --- AGE CALCULATOR FUNCTIONS --- */
+        function openAgeCalculator(event) {
+            event.preventDefault();
+            document.getElementById('ageCalcModal').style.display = 'flex';
+            let dateInput = document.getElementById('birthDate');
+            dateInput.value = '';
+            document.getElementById('ageResult').style.display = 'none';
+            
+            // Automatically focus the date input field when window pops up
+            setTimeout(function() {
+                dateInput.focus();
+            }, 100);
+        }
+
+        function closeAgeCalculator() {
+            document.getElementById('ageCalcModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside the box
+        window.onclick = function(event) {
+            let modal = document.getElementById('ageCalcModal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // KEY LISTENERS: Listen for 'Enter' key inside the date entry field
+        document.getElementById('birthDate').addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                event.preventDefault(); // Stop default form submit behaviors
+                calculateAge();         // Run age converter process
+            }
+        });
+
+        function calculateAge() {
+            let birthDateInput = document.getElementById('birthDate').value;
+            if (!birthDateInput) {
+                alert("Please select a valid date of birth!");
+                return;
+            }
+
+            let dob = new Date(birthDateInput);
+            let today = new Date();
+
+            if (dob > today) {
+                alert("Birth date cannot be in the future!");
+                return;
+            }
+
+            let ageYears = today.getFullYear() - dob.getFullYear();
+            let ageMonths = today.getMonth() - dob.getMonth();
+            let ageDays = today.getDate() - dob.getDate();
+
+            if (ageDays < 0) {
+                ageMonths--;
+                let prevMonth = new Date(today.getFullYear(), today.getMonth(), 0);
+                ageDays += prevMonth.getDate();
+            }
+
+            if (ageMonths < 0) {
+                ageYears--;
+                ageMonths += 12;
+            }
+
+            let resultString = ageYears + " Years, " + ageMonths + " Months, " + ageDays + " Days";
+            
+            document.getElementById('finalAge').innerText = resultString;
+            document.getElementById('ageResult').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>
